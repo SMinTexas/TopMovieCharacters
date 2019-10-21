@@ -1,0 +1,54 @@
+extend layouts/page
+
+block content
+  img(src="/images/filmstrip.jpeg" alt="filmstrip" width="277" height="75")
+  img(src="/images/filmstrip.jpeg" alt="filmstrip" width="277" height="75")
+  img(src="/images/filmstrip.jpeg" alt="filmstrip" width="277" height="75")
+  img(src="/images/filmstrip.jpeg" alt="filmstrip" width="277" height="75")
+  h2= character.name
+  h4= character.description
+  hr
+  .container
+    .row
+      .col-sm
+        h5= character.quote1
+      .col-sm
+        h5= character.quote2
+      .col-sm
+        h5= character.quote3
+    hr
+    .row
+      .col-sm
+        img(src=character.image1 alt=character.name)
+      .col-sm
+        img(src=character.image2 alt=character.name)
+      .col-sm
+        img(src=character.image3 alt=character.name)
+    hr
+    .row
+      .col-lg-12 Appeared In
+        h6= character.titles
+    hr
+    .row
+      .col-md Allies
+        h6= character.ally
+      .col-md Enemies
+        h6= character.enemy
+      .col-md Friends and Family
+        h6= character.family
+    hr
+    .row
+      .col-sm Created By
+        h6= character.creator
+      .col-sm Performed By
+        h6= character.performer
+      .col-sm Choice of Weapons
+        h6= character.weapon
+
+  br
+  a(href="/characters") Back to Characters
+  br
+  img(src="/images/filmstrip.jpeg" alt="filmstrip" width="277" height="75")
+  img(src="/images/filmstrip.jpeg" alt="filmstrip" width="277" height="75")
+  img(src="/images/filmstrip.jpeg" alt="filmstrip" width="277" height="75")
+  img(src="/images/filmstrip.jpeg" alt="filmstrip" width="277" height="75")

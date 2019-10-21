@@ -1,0 +1,20 @@
+extend layouts/page
+
+block content
+  img(src="/images/filmstrip.jpeg" alt="filmstrip" width="277" height="75")
+  img(src="/images/filmstrip.jpeg" alt="filmstrip" width="277" height="75")
+  img(src="/images/filmstrip.jpeg" alt="filmstrip" width="277" height="75")
+  img(src="/images/filmstrip.jpeg" alt="filmstrip" width="277" height="75")
+  .container
+    h2 Characters
+    .col
+      ul STAR WARS
+      each character in characters
+        if characters.franchise_id === 1
+        li
+          - var characterUrl = "/characters/" + character.id
+          a(href=characterUrl)= character.name
+  img(src="/images/filmstrip.jpeg" alt="filmstrip" width="277" height="75")
+  img(src="/images/filmstrip.jpeg" alt="filmstrip" width="277" height="75")
+  img(src="/images/filmstrip.jpeg" alt="filmstrip" width="277" height="75")
+  img(src="/images/filmstrip.jpeg" alt="filmstrip" width="277" height="75")
